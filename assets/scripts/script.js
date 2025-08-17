@@ -134,6 +134,13 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    const button = this.querySelector('.cta-button');
+    button.innerHTML = 'Sending...';
+    button.disabled = true;
+});
+
+
 // Add connection lines after DOM load
 document.addEventListener('DOMContentLoaded', createConnectionLines);
 
