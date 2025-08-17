@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelkader Ismail - Cybersecurity Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="mobile-menu">
+        <div class="nav-container">
+            <div class="logo"><a href="#home" class="logo-link">ABDELKADER</a></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#siem">Live SOC</a></li>
+                <li><a href="#elkn8nai">ElkN8nAi</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-image">
+              <img src="./assets/images/profile.png" alt="profile">
+            </div>
+            <h1 class="hero-title">Cybersecurity Analyst | Pen Tester | Blue-Siem</h1>
+            <p class="hero-subtitle">Protecting digital assets through proactive security research and ethical hacking</p>
+            
+            <div class="social-links">
+                <a href="www.linkedin.com/in/abdelkader-ismail-84a2bb368" class="social-link" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Techchunk4" class="social-link" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://tryhackme.com/p/abdelkaderismail82" class="social-link" aria-label="TryHackMe">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10.705 0C7.54 0 4.902 2.285 4.349 5.291a4.525 4.525 0 0 0-4.107 4.5 4.525 4.525 0 0 0 4.52 4.52h6.761V24l5.345-9.229H13.76C16.926 14.771 19.564 12.486 20.117 9.48a4.525 4.525 0 0 0 4.107-4.5A4.525 4.525 0 0 0 19.704 .461H10.705Z"/>
+                    </svg>
+                </a>
+                <a href="https://x.com/abdelkaderism82" class="social-link" aria-label="X">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Professional Summary</h3>
+                <p>I'm a passionate cybersecurity professional with expertise in both offensive and defensive security operations. With a strong foundation in penetration testing, vulnerability assessment, and threat intelligence, I help organizations strengthen their security posture through comprehensive security analysis and strategic recommendations.</p>
+                
+                <h3>My Approach</h3>
+                <p>I believe in a holistic approach to cybersecurity that combines technical expertise with business understanding. Every security challenge is an opportunity to learn and improve. I focus on practical, actionable solutions that balance security requirements with operational efficiency.</p>
+                
+                <a href="#" class="cta-button">Download Resume</a>
+            </div>
+            <div class="about-text">
+                <h3>Mission Statement</h3>
+                <p>To bridge the gap between complex cybersecurity concepts and practical business solutions. I'm committed to continuous learning in this ever-evolving field, staying ahead of emerging threats while mentoring the next generation of security professionals.</p>
+                
+                <p>My work is driven by the belief that proactive security measures and ethical hacking practices are essential for building resilient digital infrastructures in our interconnected world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1: Enterprise Network Penetration Test -->
+            <div class="project-card">
+                <h3 class="project-title">Enterprise Network Penetration Test</h3>
+                <p class="project-summary">Comprehensive security assessment of a Fortune 500 company's internal network infrastructure, identifying critical vulnerabilities and providing strategic remediation guidance.</p>
+                
+                <div class="project-details">
+                    <h4>Challenge</h4>
+                    <p>The client required a thorough security assessment of their complex multi-segment network hosting critical business applications, with minimal disruption to operations.</p>
+                    
+                    <h4>Solution</h4>
+                    <p>Conducted a phased approach starting with external reconnaissance, followed by internal lateral movement simulation. Utilized advanced persistence techniques and privilege escalation methods to demonstrate potential attack paths.</p>
+                    
+                    <h4>Result</h4>
+                    <p>Identified 15 critical vulnerabilities including domain admin compromise vectors. Delivered comprehensive remediation roadmap, resulting in 90% vulnerability reduction within 3 months.</p>
+                </div>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">Metasploit</span>
+                    <span class="tech-tag">Nmap</span>
+                    <span class="tech-tag">Cobalt Strike</span>
+                    <span class="tech-tag">PowerShell</span>
+                    <span class="tech-tag">Wireshark</span>
+                </div>
+                
+                <a href="#" class="project-link">View Detailed Report →</a>
+            </div>
+
+            <!-- Project 2: Cloud Security Architecture Review -->
+            <div class="project-card">
+                <h3 class="project-title">AWS Cloud Security Architecture Review</h3>
+                <p class="project-summary">Security assessment and hardening of a multi-account AWS environment supporting microservices architecture with PCI DSS compliance requirements.</p>
+                
+                <div class="project-details">
+                    <h4>Challenge</h4>
+                    <p>Client needed to achieve PCI DSS compliance while maintaining operational efficiency in their containerized microservices environment across multiple AWS accounts.</p>
+                    
+                    <h4>Solution</h4>
+                    <p>Implemented infrastructure-as-code security controls, designed secure CI/CD pipelines, and established comprehensive logging and monitoring using CloudTrail, GuardDuty, and custom Lambda functions.</p>
+                    
+                    <h4>Result</h4>
+                    <p>Achieved full PCI DSS Level 1 compliance certification. Reduced security incidents by 85% and improved incident response time from hours to minutes through automated threat detection.</p>
+                </div>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Terraform</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">CloudFormation</span>
+                </div>
+                
+                <a href="#" class="project-link">View Architecture Diagrams →</a>
+            </div>
+
+            <!-- Project 3: Advanced Persistent Threat Simulation -->
+            <div class="project-card">
+                <h3 class="project-title">APT Simulation & Red Team Exercise</h3>
+                <p class="project-summary">Multi-month advanced persistent threat simulation targeting a healthcare organization to test incident response capabilities and security awareness programs.</p>
+                
+                <div class="project-details">
+                    <h4>Challenge</h4>
+                    <p>Healthcare client needed to validate their security posture against sophisticated nation-state level attacks while ensuring HIPAA compliance and minimal patient care disruption.</p>
+                    
+                    <h4>Solution</h4>
+                    <p>Executed a 90-day APT campaign using custom malware, social engineering, and living-off-the-land techniques. Simulated data exfiltration attempts and established covert communication channels.</p>
+                    
+                    <h4>Result</h4>
+                    <p>Successfully maintained persistence for 45 days undetected, accessing sensitive patient data repositories. Provided detailed attack timeline and improved security awareness training reducing phishing susceptibility by 70%.</p>
+                </div>
+                
+                <div class="tech-tags">
+                    <span class="tech-tag">Cobalt Strike</span>
+                    <span class="tech-tag">Empire</span>
+                    <span class="tech-tag">Mimikatz</span>
+                    <span class="tech-tag">Custom C2</span>
+                    <span class="tech-tag">OSINT</span>
+                </div>
+                
+                <a href="#" class="project-link">View Campaign Analysis →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            
+            <div class="skill-category">
+                <h3>Offensive Security</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <span class="skill-name">Penetration Testing</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Red Teaming</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Vulnerability Scanning</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 92%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Social Engineering</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Scripting & Tools</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Bash Scripting</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Burp Suite</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 92%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Metasploit</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+     <!-- Live SIEM Dashboard Section -->
+    <section class="siem-dashboard" id="siem">
+        <h2 class="section-title">Live Security Operations Center</h2>
+        <div class="siem-container">
+            
+            <div class="siem-intro">
+                <h3>Real-Time Threat Detection</h3>
+                <p>This live SIEM dashboard connects to my personal Wazuh instance running on AWS, demonstrating real-time security monitoring capabilities.</p>
+                <div class="siem-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalAlerts">0</div>
+                        <div class="stat-label">Total Alerts Today</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="criticalAlerts">0</div>
+                        <div class="stat-label">Critical Alerts</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="activeAgents">0</div>
+                        <div class="stat-label">Active Agents</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="eventsPerSec">0</div>
+                        <div class="stat-label">Events/sec</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="siem-controls">
+                <button class="siem-btn" id="triggerDemoAlert">Trigger Demo Alert</button>
+                <button class="siem-btn secondary" id="refreshDashboard">Refresh Data</button>
+                <div class="connection-status">
+                    <span class="status-indicator" id="connectionStatus"></span>
+                    <span id="connectionText">Connecting to SIEM...</span>
+                </div>
+            </div>
+
+            <div class="logs-container">
+                <div class="logs-header">
+                    <h4>Recent Security Events</h4>
+                    <button class="clear-logs" id="clearLogs">Clear</button>
+                </div>
+                <div class="logs-display" id="logsDisplay">
+                    <div class="log-entry startup">
+                        <span class="timestamp">2025-01-11 10:30:45</span>
+                        <span class="severity info">INFO</span>
+                        <span class="message">SIEM Dashboard initialized - Connecting to Wazuh API...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="threat-map">
+                <h4>Global Threat Intelligence</h4>
+                <div class="threat-indicators">
+                    <div class="threat-item">
+                        <span class="country">🇷🇺 Russia</span>
+                        <span class="threat-level high">High Risk</span>
+                        <span class="attempts" id="russiaAttempts">0</span>
+                    </div>
+                    <div class="threat-item">
+                        <span class="country">🇨🇳 China</span>
+                        <span class="threat-level medium">Medium Risk</span>
+                        <span class="attempts" id="chinaAttempts">0</span>
+                    </div>
+                    <div class="threat-item">
+                        <span class="country">🇺🇸 USA</span>
+                        <span class="threat-level low">Low Risk</span>
+                        <span class="attempts" id="usaAttempts">0</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Projects Diagram-->
+
+    <div class="diagram-container" id="elkn8nai">
+        <h1 class="diagram-title">ELK Stack + N8N Security Automation Architecture</h1>
+        
+        <div class="architecture-diagram">
+            <!-- Data Sources -->
+            <div class="data-sources">
+                <div class="section-title">Data Sources</div>
+                
+                <div class="component" data-type="source">
+                    <span class="component-icon">🖥️</span>
+                    <div class="component-name">Windows Endpoints</div>
+                    <div class="component-desc">Winlogbeat, Sysmon, Security logs</div>
+                </div>
+
+                <div class="component" data-type="source">
+                    <span class="component-icon">🐧</span>
+                    <div class="component-name">Linux Servers</div>
+                    <div class="component-desc">Filebeat, Metricbeat, System logs</div>
+                </div>
+
+                <div class="component" data-type="source">
+                    <span class="component-icon">🌐</span>
+                    <div class="component-name">Network Devices</div>
+                    <div class="component-desc">Firewalls, IDS/IPS, Routers</div>
+                </div>
+
+                <div class="component" data-type="source">
+                    <span class="component-icon">🔒</span>
+                    <div class="component-name">Security Tools</div>
+                    <div class="component-desc">AV, EDR, Vulnerability Scanners</div>
+                </div>
+
+                <div class="component" data-type="source">
+                    <span class="component-icon">☁️</span>
+                    <div class="component-name">Cloud Platforms</div>
+                    <div class="component-desc">AWS CloudTrail, Azure AD, GCP Audit</div>
+                </div>
+
+                <div class="component" data-type="source">
+                    <span class="component-icon">🌍</span>
+                    <div class="component-name">Threat Intelligence</div>
+                    <div class="component-desc">MISP, VirusTotal, AlienVault OTX</div>
+                </div>
+            </div>
+
+            <!-- ELK Stack -->
+            <div class="elk-stack">
+                <div class="section-title">ELK Stack Core</div>
+                
+                <div class="elk-component" data-type="logstash">
+                    <span class="component-icon">⚡</span>
+                    <div class="component-name">Logstash</div>
+                    <div class="component-desc">Data Processing Pipeline</div>
+                    <div class="elk-features">
+                        <span class="feature-tag">Log Parsing</span>
+                        <span class="feature-tag">Data Enrichment</span>
+                        <span class="feature-tag">Grok Patterns</span>
+                        <span class="feature-tag">GeoIP Lookup</span>
+                    </div>
+                </div>
+
+                <div class="elk-component" data-type="elasticsearch">
+                    <span class="component-icon">🔍</span>
+                    <div class="component-name">Elasticsearch</div>
+                    <div class="component-desc">Search & Analytics Engine</div>
+                    <div class="elk-features">
+                        <span class="feature-tag">Full-Text Search</span>
+                        <span class="feature-tag">Real-time Analytics</span>
+                        <span class="feature-tag">Machine Learning</span>
+                        <span class="feature-tag">Anomaly Detection</span>
+                    </div>
+                </div>
+
+                <div class="elk-component" data-type="kibana">
+                    <span class="component-icon">📊</span>
+                    <div class="component-name">Kibana</div>
+                    <div class="component-desc">Visualization & Dashboards</div>
+                    <div class="elk-features">
+                        <span class="feature-tag">Security Dashboards</span>
+                        <span class="feature-tag">Alert Management</span>
+                        <span class="feature-tag">SIEM Features</span>
+                        <span class="feature-tag">Investigation Tools</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- N8N Automation -->
+            <div class="n8n-workflows">
+                <div class="section-title">N8N Automation</div>
+                
+                <div class="workflow-component" data-type="workflow">
+                    <span class="component-icon">🚨</span>
+                    <div class="component-name">Alert Processing</div>
+                    <div class="component-desc">Elasticsearch → N8N → ServiceNow/Slack</div>
+                </div>
+
+                <div class="workflow-component" data-type="workflow">
+                    <span class="component-icon">🛡️</span>
+                    <div class="component-name">Threat Response</div>
+                    <div class="component-desc">Auto IP blocking, User isolation</div>
+                </div>
+
+                <div class="workflow-component" data-type="workflow">
+                    <span class="component-icon">📧</span>
+                    <div class="component-name">Notification Engine</div>
+                    <div class="component-desc">Email, SMS, Teams integration</div>
+                </div>
+
+                <div class="workflow-component" data-type="workflow">
+                    <span class="component-icon">🔄</span>
+                    <div class="component-name">Data Enrichment</div>
+                    <div class="component-desc">IOC lookups, Threat intel correlation</div>
+                </div>
+
+                <div class="workflow-component" data-type="workflow">
+                    <span class="component-icon">📊</span>
+                    <div class="component-name">Report Generation</div>
+                    <div class="component-desc">Automated security reports</div>
+                </div>
+
+                <div class="workflow-component" data-type="workflow">
+                    <span class="component-icon">🎫</span>
+                    <div class="component-name">Ticketing System</div>
+                    <div class="component-desc">Auto-create incident tickets</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color data-ingestion"></div>
+                <span>Data Ingestion</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color processing"></div>
+                <span>Processing & Analysis</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color automation"></div>
+                <span>Automation & Response</span>
+            </div>
+        </div>
+
+        <!-- Detailed Flow -->
+        <div class="flow-details">
+            <div class="section-title">Security Event Processing Flow</div>
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Data Collection</div>
+                    <div class="step-description">Beats agents and connectors collect logs from various sources including endpoints, network devices, and cloud platforms</div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Data Processing</div>
+                    <div class="step-description">Logstash parses, enriches, and transforms raw data using grok patterns and filters for optimal analysis</div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Indexing & Storage</div>
+                    <div class="step-description">Elasticsearch indexes processed data with proper field mapping for fast search and analytics</div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-title">Detection & Analysis</div>
+                    <div class="step-description">Kibana security rules and ML jobs detect anomalies and potential security threats in real-time</div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="step-number">5</div>
+                    <div class="step-title">Alert Generation</div>
+                    <div class="step-description">Suspicious activities trigger alerts that are automatically sent to N8N workflows for processing</div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="step-number">6</div>
+                    <div class="step-title">Automated Response</div>
+                    <div class="step-description">N8N workflows execute predefined actions like creating tickets, sending notifications, or blocking threats</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Controls -->
+        <div class="controls">
+            <button class="control-btn" onclick="startAnimation()">▶️ Show Data Flow</button>
+            <button class="control-btn" onclick="highlightWorkflows()">✨ Highlight Workflows</button>
+            <button class="control-btn" onclick="resetView()">🔄 Reset View</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>I'm always interested in discussing new opportunities, collaborating on security research, or sharing insights about the latest cybersecurity trends. Feel free to reach out!</p>
+                
+               
+                
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your project or opportunity..."></textarea>
+                </div>
+                
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Abdelkader Ismail. All rights reserved. | Cybersecurity Professional | Ethical Hacker</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active state to navigation links based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.style.color = 'var(--text-secondary)';
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.style.color = 'var(--accent-primary)';
+                }
+            });
+        });
+
+        // Contact form submission (placeholder functionality)
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo form - in a real implementation, this would submit to a server endpoint.');
+        });
+
+        // Add scroll-based animations for project cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to project cards and skill categories
+        document.querySelectorAll('.project-card, .skill-category').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Mobile menu toggle (basic implementation)
+        const navToggle = document.createElement('button');
+        navToggle.innerHTML = '☰';
+        navToggle.classList.add('nav-toggle');
+        navToggle.style.cssText = `
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        `;
+
+        document.querySelector('.nav-container').appendChild(navToggle);
+
+        // Add responsive behavior
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+        
+        function handleMobileMenu(e) {
+            const navLinks = document.querySelector('.nav-links');
+            if (e.matches) {
+                navToggle.style.display = 'block';
+            } else {
+                navToggle.style.display = 'none';
+                navLinks.style.display = 'flex';
+            }
+        }
+
+        mediaQuery.addListener(handleMobileMenu);
+        handleMobileMenu(mediaQuery);
+    </script>
+
+</body>
+</html>
+            </div>
+
+            <div class="skill-category">
+                <h3>Defensive Security</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <span class="skill-name">SIEM</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">EDR Implementation</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">IDS/IPS</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Threat Intelligence</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 87%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Cloud Security</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <span class="skill-name">AWS Security</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 93%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Azure Security</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">IAM</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">CloudTrail</span>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+             <script src="/assets//scripts/script.js"></script>
+        </body>
+</html>
